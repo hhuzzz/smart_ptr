@@ -30,7 +30,6 @@ private:
     // 默认的deleter
     static std::function<void(T *)> default_del;
 
-private:
     unsigned *m_p_use_count = nullptr;
     T *m_pobject = nullptr;
     std::function<void(T *)> m_del = default_del;
